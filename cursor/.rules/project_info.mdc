@@ -1,0 +1,30 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# 📝 Natural Language Task Manager (Enterprise-Grade To-Do List)
+
+A modern web application that allows users to **create tasks using natural language input** such as:
+
+
+The system **automatically parses** the input to extract:
+- 📝 Task Name  
+- 👤 Assignee  
+- 🕒 Due Date and Time  
+- ⚡ Priority (defaults to P3 unless specified)
+
+These tasks are then displayed in a **beautiful, editable task board/list UI**, allowing teams to manage tasks efficiently with zero friction.
+
+---
+
+## 🔧 What We Are Building
+
+We are building a **Natural Language Task Manager** – an intelligent to-do list for individuals and teams that:
+- Accepts human-friendly task descriptions
+- Converts them into structured, manageable tasks
+- Displays them in a polished interface
+- Supports editing, organizing, and prioritizing
+
+Think of it as **"Notion + NLP for task entry"** or a **command bar for productivity**, ideal for modern teams.
+

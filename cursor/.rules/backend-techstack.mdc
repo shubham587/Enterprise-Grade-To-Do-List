@@ -1,0 +1,21 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+## ⚙️ Backend Architecture
+
+### 🛠 Tech Stack
+- **Framework:** Flask (Python)
+- **Database:** MongoDB
+- **ODM:** pymongo or mongoengine
+- **NLP Parsing:** OpenAI GPT API for natural language task extraction
+- **API Type:** RESTful endpoints with JSON input/output
+- **CORS:** Enabled to allow React frontend requests
+
+### 🔑 Environment Variables (`.env` file)
+Create a `.env` file in the backend root folder with the following keys:
+
+```env
+MONGODB_URI=<your-mongodb-connection-string>
+OPENAI_API_KEY=<your-openai-api-key>

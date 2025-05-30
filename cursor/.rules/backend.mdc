@@ -1,0 +1,77 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+ Core Backend Features
+1. Task Parsing Endpoint
+Accepts raw natural language task string from frontend.
+
+Calls OpenAI GPT API with a prompt to extract:
+
+Task name
+
+Assignee
+
+Due date & time (standardized format)
+
+Priority (P1, P2, P3, or P4; default P3)
+
+Validates and sanitizes the GPT response.
+
+Returns structured task JSON to frontend.
+
+2. Task Management API (CRUD)
+Create: Save parsed task to MongoDB.
+
+Read: Retrieve list of tasks (optionally filtered by assignee or date).
+
+Update: Modify existing task details.
+
+Delete: Remove task by ID.
+
+3. Data Model
+MongoDB tasks collection schema example:
+
+json
+Copy
+Edit
+{
+  "_id": "ObjectId",
+  "task_name": "Finish landing page",
+  "assignee": "Aman",
+  "due_date_time": "2025-06-20T23:00:00Z",
+  "priority": "P3",
+  "created_at": "ISODate(...)",
+  "updated_at": "ISODate(...)"
+}
+4. Error Handling & Validation
+Handles GPT API errors and ambiguous outputs gracefully.
+
+Prompts user for clarification if parsing is uncertain.
+
+5. Security
+For MVP, internal usage only.
+
+For public deployments, consider adding rate limiting and API key validation.
+
+6. Flask-CORS
+Enable CORS to allow cross-origin requests from your React frontend.
+
+🛡 Security and Best Practices
+Keep .env file secret and do not commit to version control.
+
+Use python-dotenv to load environment variables in Flask.
+
+For production, implement rate limiting and authentication as needed.
+
+📝 Recommended Python Packages
+flask
+
+flask-cors
+
+pymongo or mongoengine
+
+openai
+
+python-dotenv

@@ -1,0 +1,24 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+## 🧱 Frontend Architecture
+
+### 🧩 Planned Components
+- `<TaskInput />`: Handles natural language input from the user
+- `<TaskCard />`: Displays individual parsed tasks with task name, assignee, time, and priority
+- `<TaskList />`: Renders all task cards in a board or list layout
+- `<EditTaskModal />`: (Optional) Allows editing an existing task in a modal form
+- `<PriorityBadge />`: Shows visual tag for priority (P1–P4)
+- `<AssigneeAvatar />`: (Optional) Displays avatar or initials of assignee
+
+### 📦 State Management with Redux Toolkit
+- Central store will handle the following slices:
+  - `tasks`: list of structured task objects
+  - `editingTask`: task being edited, if any
+  - (optional) `ui`: modal visibility, form state, etc.
+
+### 📏 Form & Validation
+- Form interactions handled via `react-hook-form`
+- Validation rules (if needed later) will be handled within hook-form setup

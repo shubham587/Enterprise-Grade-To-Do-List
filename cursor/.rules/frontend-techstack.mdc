@@ -1,0 +1,70 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# 📝 Natural Language Task Manager (Enterprise-Grade To-Do List)
+
+A web app that lets users input tasks using **natural language**, parses them into structured data (task, assignee, due date/time, and priority), and displays them beautifully in a task list UI.
+
+---
+
+## 🚀 Objective
+
+Build a task manager where users can input tasks like:
+
+- `"Finish landing page Aman by 11pm 20th June"`
+- `"Call client Rajeev tomorrow 5pm"`
+
+The app should parse and display the following:
+
+| Task Name            | Assigned To | Due Date/Time      | Priority |
+|----------------------|-------------|--------------------|----------|
+| Finish landing page  | Aman        | 11:00 PM, 20 June  | P3       |
+
+---
+
+## ✅ Key Features
+
+- Natural language task input
+- Extraction of:
+  - **Task name**
+  - **Assignee**
+  - **Due date & time**
+  - **Priority** (default: P3 if not specified)
+- Display parsed tasks in a structured UI list or board
+- Bonus: Inline or modal-based **editing** of tasks
+- Default values and graceful handling of missing fields
+
+---
+
+### 🛠 Tech Stack
+- **Framework:** React (via Vite)
+- **Styling:** Tailwind CSS
+- **Component Library:** shadcn/ui
+- **State Management:** Redux Toolkit
+- **Form Handling:** react-hook-form
+- **Responsiveness:** Fully responsive, mobile-first design using Tailwind utilities
+- **Routing:** Not required (Single Page App)
+- **Theme Support:** Not included in v1
+
+
+---
+
+## 🎨 Design System
+
+### Fonts
+- **Primary:** Inter (Google Fonts)
+
+### Color Palette
+Element	Color Name	Hex	Tailwind Class
+Primary	Indigo	#6366F1	indigo-500
+Accent	Emerald	#10B981	green-500
+Background	Soft Gray	#F9FAFB	gray-50
+Text (Primary)	Dark Gray	#111827	gray-900
+Text (Secondary)	Muted Gray	#6B7280	gray-500
+Priority P1	Red	#EF4444	red-500
+Priority P2	Orange	#F59E0B	orange-500
+Priority P3	Blue	#3B82F6	blue-500
+Priority P4	Neutral Gray	#9CA3AF	gray-400
+

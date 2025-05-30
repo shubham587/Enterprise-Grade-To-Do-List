@@ -1,0 +1,34 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+## 🌟 Main Features
+
+### 🧠 1. Natural Language Task Input
+- Input tasks like: `Call Rajeev tomorrow 5pm P1`
+- Parsed using NLP or pattern-based logic
+
+### 📤 2. Task Parsing and Extraction
+- Automatically extracts:
+  - 📝 **Task Name**
+  - 👤 **Assignee**
+  - 🕒 **Due Date & Time**
+  - ⚡ **Priority** (defaults to `P3`)
+
+### 📋 3. Task Board / List View
+- Displays tasks in a clean, responsive UI
+- Shows task name, assignee, due date/time, and priority
+- Priority tags are visually color-coded
+
+### ✏️ 4. Editable Tasks
+- Edit any field of the parsed task: name, assignee, date/time, priority
+- Supports inline or modal editing
+
+### 🔁 5. Responsive and Polished UI
+- Built with Tailwind CSS and shadcn/ui for sleek appearance
+- Fully mobile-friendly and desktop-optimized
+- Priorities have distinct colors for quick scanning
+
+### 🧪 6. Pluggable Parser (Optional / Future)
+- Architecture supports swapping in AI/LLM-based parsing models in future
